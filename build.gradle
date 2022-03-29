@@ -38,6 +38,10 @@ dependencies {
 	compile('com.google.code.gson:gson:2.8.2')
 	//Thymeleaf
 	compile('org.springframework.boot:spring-boot-starter-thymeleaf')
+	//Actuator and Prometheus
+	compile('org.springframework.boot:spring-boot-starter-actuator')
+	implementation group: 'io.micrometer', name: 'micrometer-registry-prometheus', version: '1.0.3'
+	implementation group: 'io.micrometer', name: 'micrometer-spring-legacy', version: '1.0.3'
 
 	runtimeOnly('com.h2database:h2')
 
